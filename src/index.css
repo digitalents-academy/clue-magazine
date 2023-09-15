@@ -91,6 +91,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -105,17 +106,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -123,6 +128,7 @@ q:after {
   content: "";
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -174,6 +180,7 @@ table {
   font-family: "bdo-grotesk";
   src: url(/src/assets/fonts/BDOGrotesk-Regular.ttf);
 }
+
 @font-face {
   font-family: "league-gothic";
   src: url(/clue-mag/src/assets/fonts/LeagueGothic-Regular.ttf);
@@ -197,4 +204,123 @@ h2 {
 
 .durga-anil p {
   font-size: 16px;
+}
+
+/* Landing Page Styles*/
+
+li {
+  list-style-type: none;
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  vertical-align: middle;
+}
+
+li:hover {
+  background-color: red;
+}
+
+ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.Logo {
+  width: 100px;
+  position: absolute;
+  top: 15px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.MenuIcon {
+  width: 20px;
+}
+
+.NavBar {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  border-bottom: 2px solid red;
+  width: 100%;
+}
+
+.SearchIcon {
+  width: 20px;
+}
+
+.Search {
+  width: auto;
+  outline: 1px solid red;
+}
+
+.SearchButton {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.SearchBar {
+  position: relative;
+  left: 220px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.Search:hover .SearchBar {
+  transition: 1s;
+  left: 0;
+}
+
+.SearchBar:active {
+  left: 0;
+  background-color: blue;
+}
+
+.MenuButton {
+  height: 40px;
+  width: 40px;
+}
+
+.NavButton {
+  padding: 20px;
+}
+
+.MLSBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+  width: 100%;
+}
+
+.TopBar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+  overflow: hidden;
+}
+
+.FirstSlide {
+  width: 55%;
+}
+
+.HeadlineArticle {
+  margin-top: 40px;
+  display: flex;
+}
+
+.ArticleText {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.singUp {
+  margin-top: 40px;
+  background-color: red;
+  height: 200px;
 }
