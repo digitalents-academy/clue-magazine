@@ -24,26 +24,38 @@ export default function LandingPage() {
             <li>Film & TV</li>
           </ul>
         </div>
-      </nav>
+        <div class="CategoriesMenu">
+          <div class="Menu">
 
-      <div class="HeadlineArticle">
-        <img src="/src/assets/slider-images/durga-anil.jpg" class="FirstSlide" />
-        <div class="ArticleText">
-          <h1>Durga Anil’s abstract photographs play with light and form</h1>
-          <p>
-            Diam vel quam elementum pulvinar etiam. Facilisi etiam dignissim diam quis enim lobortis.
-            Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam. Et malesuada fames
-            ac turpis egestas. Sit amet massa vitae tortor condimentum lacinia quis vel eros.
-          </p>
+          </div>
         </div>
-      </div>
-      <div class="singUp">
-        <p>
-          Lectus magna fringilla urna porttitor rhoncus dolor purus. Mauris vitae ultricies leo integer
-          malesuada nunc vel risus.
-        </p>
-        <button>LOGIN</button>
-        <button>SIGN UP</button>
+      </nav>
+      <div class="MainContent">
+        <div class="HeadlineArticle">
+          <img src="/src/assets/slider-images/durga-anil.jpg" class="FirstSlide" />
+          <div class="ArticleText">
+            <h1>Durga Anil’s abstract photographs play with light and form</h1>
+            <p>
+              Diam vel quam elementum pulvinar etiam. Facilisi etiam dignissim diam quis enim lobortis.
+              Suspendisse interdum consectetur libero id faucibus nisl tincidunt eget nullam. Et malesuada fames
+              ac turpis egestas. Sit amet massa vitae tortor condimentum lacinia quis vel eros.
+            </p>
+          </div>
+        </div>
+        <div class="singUp">
+          <img src="/src/assets/icons/club-logo.svg" class="singUpLogo" />
+          <div class="textPlusButton">
+            <p>
+              Lectus magna fringilla urna porttitor rhoncus dolor purus. Mauris vitae ultricies leo integer
+              malesuada nunc vel risus.
+            </p>
+            <button class="login">LOGIN</button>
+            <button class="login">SIGN UP</button>
+          </div>
+        </div>
+        <div class="OtherNews">
+        </div>
+        <div class="clubNewsLetter"></div>
       </div>
     </div>
   );
