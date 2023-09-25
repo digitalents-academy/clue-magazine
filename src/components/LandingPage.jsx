@@ -54,8 +54,39 @@ export default function LandingPage() {
           </div>
         </div>
         <div class="OtherNews">
+          {
+            <div class="LatestText">
+              <h1>LATEST</h1>
+              <button></button>
+            </div>
+          }
+          <div class="Article1">
+            <img src="/src/assets/slider-images/liepa-petrauskas.jpg" class="ArticlePhoto1" />
+            <p>Liepa Petrauskas’ graphic work combines bold colors and minimalistic graphics</p>
+          </div>
+          <div class="Article1">
+            <img src="/src/assets/slider-images/liepa-petrauskas.jpg" class="ArticlePhoto1" />
+            <p>Liepa Petrauskas’ graphic work combines bold colors and minimalistic graphics</p>
+          </div>
+          <div class="Article1">
+            <img src="/src/assets/slider-images/liepa-petrauskas.jpg" class="ArticlePhoto1" />
+            <p>Liepa Petrauskas’ graphic work combines bold colors and minimalistic graphics</p>
+          </div>
+          <div class="Article1">
+            <img src="/src/assets/slider-images/liepa-petrauskas.jpg" class="ArticlePhoto1" />
+            <p>Liepa Petrauskas’ graphic work combines bold colors and minimalistic graphics</p>
+          </div>
         </div>
-        <div class="clubNewsLetter"></div>
+        <div class="clubNewsLetter">
+          <img src="/src/assets/icons/Logo.svg" class="LetterLogo"></img>
+          <div class="SingUpSection">
+            <h1>Sign up for the Clue newsletter</h1>
+            <div class="singUp2">
+              <input type="text" />
+              <button>SUBSCRIBE</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
