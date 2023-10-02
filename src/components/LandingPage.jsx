@@ -3,7 +3,8 @@ export default function LandingPage() {
     <div>
       <div class="TopSection">
         <div class="MLSBar">
-          <button class="MenuButton">
+          <script src="/src/MenuOnOff.js"></script>
+          <button class="MenuButton" onclick="switchOn()">
             <img src="/src/assets/icons/menu.svg" class="MenuIcon" />
           </button>
           <img src="/src/assets/icons/logo.svg" class="Logo" />
@@ -25,10 +26,12 @@ export default function LandingPage() {
           </ul>
         </div>
       </div>
-      <div class="CategoriesMenu">
+      <div id="CategoriesMenu">
+        <div>
+          <p>Categories</p>
+        </div>
         <div class="Menu">
           <ul>
-            <li>Categories</li>
             <li>Art</li>
             <li>Photography</li>
             <li>Fashion</li>
@@ -36,8 +39,11 @@ export default function LandingPage() {
             <li>Music</li>
             <li>Film & TV</li>
           </ul>
-          <button>LOGIN</button>
-          <button>SIGN UP</button>
+        </div>
+        <div class="SingUpMenu">
+            <img src="/src/assets/icons/club-logo.svg" />
+            <button>LOGIN</button>
+            <button>SIGN UP</button>
         </div>
       </div>
       <div class="MainContent">
