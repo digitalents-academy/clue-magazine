@@ -1,10 +1,12 @@
+import { useState } from "react";
+
 export default function LandingPage() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <div>
       <div class="TopSection">
         <div class="MLSBar">
-          <script src="/src/MenuOnOff.js"></script>
-          <button class="MenuButton" onclick="switchOn()">
+          <button class="MenuButton" onClick={() => setMenuOpen(!menuOpen)}>
             <img src="/src/assets/icons/menu.svg" class="MenuIcon" />
           </button>
           <img src="/src/assets/icons/logo.svg" class="Logo" />
@@ -26,8 +28,8 @@ export default function LandingPage() {
           </ul>
         </div>
       </div>
-      <div id="CategoriesMenu">
-        <div>
+      {menuOpen && <div id="CategoriesMenu">
+        <div class="CategoryTitle">
           <p>Categories</p>
         </div>
         <div class="Menu">
@@ -41,11 +43,12 @@ export default function LandingPage() {
           </ul>
         </div>
         <div class="SingUpMenu">
-            <img src="/src/assets/icons/club-logo.svg" />
-            <button>LOGIN</button>
-            <button>SIGN UP</button>
+          <img src="/src/assets/icons/club-logo.svg" class="singUpLogo1" />
+          <button class="login1">LOGIN</button>
+          <button class="loginSingUp1">SIGN UP</button>
         </div>
       </div>
+      }
       <div class="MainContent">
         <div class="HeadlineArticle">
           <img src="/src/assets/slider-images/durga-anil.jpg" class="FirstSlide" />
@@ -59,14 +62,16 @@ export default function LandingPage() {
           </div>
         </div>
         <div class="singUp">
-          <img src="/src/assets/icons/club-logo.svg" class="singUpLogo" />
+          <img src="/src/assets/icons/club-logo.svg" class="singUpLogo2" />
           <div class="textPlusButton">
             <p>
               Lectus magna fringilla urna porttitor rhoncus dolor purus. Mauris vitae ultricies leo integer
               malesuada nunc vel risus.
             </p>
-            <button class="login">LOGIN</button>
-            <button class="login">SIGN UP</button>
+            <div class="loginSection">
+              <button class="login2">LOGIN</button>
+              <button class="loginSingUp2">SIGN UP</button>
+            </div>
           </div>
         </div>
         <div class="OtherNews">
@@ -81,31 +86,31 @@ export default function LandingPage() {
           </div>
           <div class="Article1">
             <div class="ArticleType1">
-              <div class="ArticleType2">ART</div>
+              <div class="ArticleType2"><p>ART</p></div>
               <img src="/src/assets/slider-images/liepa-petrauskas.jpg" class="ArticlePhoto1" />
             </div>
             <p>Liepa Petrauskas’ graphic work combines bold colors and minimalistic graphics</p>
           </div>
           <div class="Article1">
             <div class="ArticleType1">
-              <div class="ArticleType2">ART</div>
-              <img src="/src/assets/slider-images/liepa-petrauskas.jpg" class="ArticlePhoto1" />
+              <div class="ArticleType2"><p>ARCHITECTURE</p></div>
+              <img src="/src/assets/slider-images/noelene-spear.jpeg" class="ArticlePhoto1" />
             </div>
-            <p>Liepa Petrauskas’ graphic work combines bold colors and minimalistic graphics</p>
+            <p>Noelene Spear’s photographs explore the architecture of Manhattan</p>
           </div>
           <div class="Article1">
             <div class="ArticleType1">
-              <div class="ArticleType2">ART</div>
-              <img src="/src/assets/slider-images/liepa-petrauskas.jpg" class="ArticlePhoto1" />
+              <div class="ArticleType2"><p>LIFE & CULTURE</p></div>
+              <img src="/src/assets/slider-images/jeanie-ellery.jpg" class="ArticlePhoto1" />
             </div>
-            <p>Liepa Petrauskas’ graphic work combines bold colors and minimalistic graphics</p>
+            <p>We visited Jeanie Ellery’s home in Lower East Side</p>
           </div>
           <div class="Article1">
             <div class="ArticleType1">
-              <div class="ArticleType2">ART</div>
-              <img src="/src/assets/slider-images/liepa-petrauskas.jpg" class="ArticlePhoto1" />
+              <div class="ArticleType2"><p>ART</p></div>
+              <img src="/src/assets/slider-images/kaila-west.jpeg" class="ArticlePhoto1" />
             </div>
-            <p>Liepa Petrauskas’ graphic work combines bold colors and minimalistic graphics</p>
+            <p>Discover Kaila West’s minimalistic paintings</p>
           </div>
         </div>
         <div class="clubNewsLetter">
@@ -114,7 +119,7 @@ export default function LandingPage() {
             <h1>Sign up for the Clue newsletter</h1>
             <div class="singUp2">
               <input type="text" placeholder="Your Email" />
-              <button>SUBSCRIBE</button>
+              <button class="subscribeB">SUBSCRIBE</button>
             </div>
           </div>
         </div>

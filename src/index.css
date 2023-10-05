@@ -228,12 +228,14 @@ li {
   padding: 10px;
   vertical-align: middle;
   font-family: league-gothic;
-  font-size: 30px;
+  font-size: 2.5vw;
+  text-transform: uppercase;
 }
 
 li:hover {
   background-color: black;
   color: white;
+  transition: 0.5s;
 }
 
 ul {
@@ -245,7 +247,7 @@ ul {
 .Logo {
   width: 100px;
   position: absolute;
-  top: 25px;
+  top: 5%;
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -275,12 +277,14 @@ ul {
   width: 40px;
   height: 40px;
   position: relative;
+  border: none;
+  background-color: transparent;
   z-index: 1;
 }
 
 .SearchBar {
   position: relative;
-  left: 220px;
+  left: 350px;
   border: none;
   border-bottom: 2px solid black;
 }
@@ -298,6 +302,8 @@ ul {
 .MenuButton {
   height: 40px;
   width: 40px;
+  border: none;
+  background-color: transparent;
 }
 
 .NavButton {
@@ -310,7 +316,7 @@ ul {
   align-items: center;
   height: 200px;
   width: 100%;
-  padding: 40px;
+  padding: 40px 0px 40px 0px;
 }
 
 .TopSection {
@@ -349,13 +355,26 @@ ul {
   color: white;
 }
 
-.singUpLogo {
-  width: 50%;
+.singUpLogo2 {
+  width: 35%;
 }
 
-.login {
+.login2 {
   width: 50%;
   height: 50px;
+  background-color: violet;
+  font-family: league-gothic;
+  font-size: 2vw;
+  border: none;
+}
+
+
+.loginSingUp2 {
+  width: 50%;
+  height: 50px;
+  font-family: league-gothic;
+  font-size: 2vw;
+  border: none;
 }
 
 .MainContent {
@@ -364,6 +383,17 @@ ul {
   padding-left: 100px;
   padding-right: 100px;
   flex-direction: column;
+}
+
+.textPlusButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.loginSection {
+  display: flex;
+  gap: 20px;
 }
 
 .textPlusButton p {
@@ -376,11 +406,11 @@ ul {
 
 .ArticleText h1 {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 3.5vw;
 }
 
 .ArticleText p {
-  font-size: 20px;
+  font-size: 2vw;
 }
 
 .OtherNews {
@@ -396,11 +426,13 @@ ul {
   margin-right: 60px;
   display: flex;
   padding: 30px;
+  margin-bottom: 40px;
 }
 
 #CategoriesMenu {
   width: 100%;
-  height: 380px;
+  height: 450px;
+  padding: 20px;
   background-color: black;
   border-bottom: 3px solid white;
   position: fixed;
@@ -409,17 +441,29 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  visibility: hidden;
+  z-index: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  animation-name: example;
+  animation-duration: 0.5s;
+  align-items: center;
 }
 
-.HideMenu {
-  visibility: visible;
+@keyframes example {
+  from {
+    height: 0px;
+  }
+
+  to {
+    height: 450px;
+  }
 }
 
 .Menu {
   position: sticky;
   display: flex;
-  height: 380px;
+  height: 85%;
+  text-transform: uppercase;
 }
 
 .Menu ul {
@@ -428,6 +472,8 @@ ul {
 
 .Menu li {
   text-align: left;
+  padding: 0px;
+  font-size: 45px;
 }
 
 .LetterLogo {
@@ -442,7 +488,7 @@ ul {
 }
 
 .SingUpSection h1 {
-  font-size: 10vw;
+  font-size: 8vw;
   text-align: left;
   font-family: league-gothic;
 }
@@ -453,31 +499,17 @@ ul {
   height: 50px;
 }
 
-.singUp2 button {
-  width: 40%;
-}
-
-.singUp2 input {
-  width: 60%;
-}
-
 .ArticlePhoto1 {
   width: 100%;
 }
 
 .Article1 {
-  outline: 1px solid red;
   width: 24%;
-  font-size: 25px;
-}
-
-.Article1 p {
-  font-size: 2vw;
+  font-size: 2.5vw;
   font-family: league-gothic;
 }
 
 .LatestText {
-  outline: 1px solid red;
   flex-basis: 100%;
   height: 40px;
   display: flex;
@@ -492,7 +524,7 @@ ul {
 }
 
 .LatestButton:hover {
-  background-color: red;
+  background-color: violet;
 }
 
 .LB1 {
@@ -520,13 +552,59 @@ ul {
   background-color: black;
   color: white;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  width: 14%;
-  height: 50px;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
   font-family: league-gothic;
+  font-size: 2.5vw;
 }
 
+.subscribeB {
+  width: 40%;
+  background-color: black;
+  color: white;
+  border: none;
+  font-family: league-gothic;
+  font-size: 1.5vw;
+}
+
+.singUp2 input {
+  width: 60%;
+  border: 2px solid black;
+}
+
+.CategoryTitle {
+  font-size: 5vw;
+  font-family: league-gothic;
+  text-transform: uppercase;
+  width: 200px;
+  text-align: center;
+  position: relative;
+  top: -150px;
+}
+
+.SingUpMenu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.SingUpMenu button {
+  border: none;
+  height: 50px;
+  width: 250px;
+}
+
+.singUpLogo1 {
+  width: 80%;
+}
+
+.login1 {
+  background-color: violet;
+}
 
 @media only screen and (max-width: 600px) {
   :root {
