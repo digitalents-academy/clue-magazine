@@ -3,6 +3,7 @@ import { useState } from "react";
 import NavBar from "./components/NavBar";
 import MobileDropDown from "./components/MobileDropDown";
 import MobilePage from "./components/MobilePage";
+import "./mobilepage.css"
 
 export default function MainPage() {
   const [isTargetVisible, setIsTargetVisible] = useState(false);
