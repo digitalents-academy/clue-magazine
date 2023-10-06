@@ -361,7 +361,7 @@ ul {
 
 .login2 {
   width: 50%;
-  height: 50px;
+  height: 80px;
   background-color: violet;
   font-family: league-gothic;
   font-size: 2vw;
@@ -371,7 +371,7 @@ ul {
 
 .loginSingUp2 {
   width: 50%;
-  height: 50px;
+  height: 80px;
   font-family: league-gothic;
   font-size: 2vw;
   border: none;
@@ -389,11 +389,13 @@ ul {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  text-transform: uppercase;
+  font-family: league-gothic;
 }
 
 .loginSection {
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 
 .textPlusButton p {
@@ -405,12 +407,14 @@ ul {
 }
 
 .ArticleText h1 {
-  font-weight: bold;
+  font-family: league-gothic;
   font-size: 3.5vw;
+  text-transform: uppercase;
 }
 
 .ArticleText p {
-  font-size: 2vw;
+  font-size: 1.5vw;
+  font-family: bdo-grotesk;
 }
 
 .OtherNews {
@@ -485,6 +489,7 @@ ul {
   justify-content: center;
   flex-direction: column;
   margin-left: 40px;
+  text-transform: uppercase;
 }
 
 .SingUpSection h1 {
@@ -507,6 +512,7 @@ ul {
   width: 24%;
   font-size: 2.5vw;
   font-family: league-gothic;
+  text-transform: uppercase;
 }
 
 .LatestText {
@@ -595,7 +601,10 @@ ul {
 .SingUpMenu button {
   border: none;
   height: 50px;
-  width: 250px;
+  width: 300px;
+  text-transform: uppercase;
+  font-family: league-gothic;
+  font-size: 1.5vw;
 }
 
 .singUpLogo1 {
